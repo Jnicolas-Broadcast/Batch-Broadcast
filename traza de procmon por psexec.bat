@@ -1,7 +1,7 @@
 @ECHO OFF
 cd c:\
 PsExec64.exe -sd \\hostdestino c:\procmon64.exe -accepteula -backingfile c:\temp\proc.pml -quiet
-REM luego de "\\hostdestino" sigue la ruta del ejecutable "procmon64.exe" en el destino, ubicado en su disco raiz.
+REM luego de "\\hostdestino" sigue la ruta del ejecutable "procmon64.exe" ubicado en ese hostdestino, y en su disco raiz.
 REM Se indican los parametros y seguido, se guarda un fichero ".pml" , todo de manera silenciosa "-quiet"
 msg * Ejecutando msiexec... (misma sintaxis del lanswp)
 REM --------------------------------------------------------------------------------------------------------------
