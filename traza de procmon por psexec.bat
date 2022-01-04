@@ -1,4 +1,4 @@
-@ECHO OFF
+REM @ECHO OFF
 cd c:\
 PsExec64.exe -sd \\SISTEMA_12_705 c:\procmon64.exe -accepteula -backingfile c:\temp\proc.pml -quiet
 REM luego de "\\SISTEMA_12_705" sigue la ruta del ejecutable "procmon64.exe" ubicado en ese SISTEMA_12_705, y en su disco raiz.
