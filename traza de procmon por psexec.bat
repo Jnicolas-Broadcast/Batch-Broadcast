@@ -10,9 +10,9 @@ REM Arriba, es la linea que se ejecuta desde el Lansw
 PAUSE
 REM --------------------------------------------------------------------------------------------------------------
 Psexec64.exe -sd \\hostdestino c:\procmon64.exe -accepteula -terminate -quiet
-msg * "cerrando la traza del processmonitor"
+msg * "concluye la traza del processmonitor"
 xcopy \\hostdestino\c$\temp\proc.pml c:\
 c:\procmon64.exe /openlog c:\proc.pml
 PAUSE
 REM Ubicacion del ejecutable a copiar (procmon64) hacia host destino:
-REM \\10.1.3.171\c$\Program Files (x86)\Lansweeper\PackageShare\Installers
+REM \\X.X.X.X\c$\Program Files (x86)\Lansweeper\PackageShare\Installers
