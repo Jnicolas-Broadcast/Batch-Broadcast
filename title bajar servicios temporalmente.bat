@@ -15,10 +15,12 @@ net start bits
 taskkill /im OpenOffice417.exe /f /t
 taskkill /im OfficeClickToRun.exe /f /t
 taskkill /im msiexec.exe /f /t
+timeout 2 /nobreak
+taskkill /im msiexec.exe /f /t
+timeout 2 /nobreak
+taskkill /im msiexec.exe /f /t
 net start msiserver
 net start wuauserv
 ::ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
 ::ren C:\Windows\System32\catroot2 Catroot2.old
 exit
- 
-
