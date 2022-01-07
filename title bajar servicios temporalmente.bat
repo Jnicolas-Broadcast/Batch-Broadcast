@@ -8,15 +8,17 @@ net stop wuauserv
 net stop cryptSvc
 net stop bits
 net stop msiserver
-::ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
-::ren C:\Windows\System32\catroot2 Catroot2.old
 timeout 7 /nobreak
-net start wuauserv
 net start cryptSvc
 net start bits
+:: elimina proc en segundo plano y reinicia servicio msi
 taskkill /im OpenOffice417.exe /f /t
 taskkill /im OfficeClickToRun.exe /f /t
 taskkill /im msiexec.exe /f /t
 net start msiserver
+net start wuauserv
+::ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+::ren C:\Windows\System32\catroot2 Catroot2.old
+exit
  
 
