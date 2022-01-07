@@ -23,4 +23,5 @@ net start msiserver
 net start wuauserv
 ::ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
 ::ren C:\Windows\System32\catroot2 Catroot2.old
+::msg * Se recomienda reiniciar el equipo para que los .msi que se instalen tengan efecto
 exit
