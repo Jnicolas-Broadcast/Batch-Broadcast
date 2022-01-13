@@ -15,10 +15,7 @@ net start bits
 taskkill /im OpenOffice417.exe /f /t
 taskkill /im OfficeClickToRun.exe /f /t
 taskkill /im msiexec.exe /f /t
-timeout 2 /nobreak
-taskkill /im msiexec.exe /f /t
-timeout 2 /nobreak
-taskkill /im msiexec.exe /f /t
+timeout 4 /nobreak
 net start msiserver
 net start wuauserv
 gpupdate /force
