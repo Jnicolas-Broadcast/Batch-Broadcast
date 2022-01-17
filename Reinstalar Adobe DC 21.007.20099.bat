@@ -1,7 +1,7 @@
 title Reinstalar Adobe Reader DC 21.007.20099
 :: ----------------------------------------------------------------------------------------------------------------------------------------
 :: DESDE LANSWEEPER:
-:: xcopy "C:\Program Files (x86)\Lansweeper\PackageShare\Installers\Nuevo Acrobat Reader\AcroRead.msi" /f /z 
+:: xcopy "C:\Program Files (x86)\Lansweeper\PackageShare\Installers\Nuevo Acrobat Reader\AcroRead.msi" "Destino equipo final\disco\ubicacion" /f /z 
 :: ----------------------------------------------------------------------------------------------------------------------------------------
 
 ::eliminamos..
