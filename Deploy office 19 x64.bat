@@ -9,4 +9,4 @@ rmdir /S /Q "C:\Temp\Office paquete exe setup"
 :: debido a cómo se quiere instalar Office 2019, TIENE que instalarse como 
 :: el usuario que inició sesión. La cuenta del sistema o las credenciales de escaneo 
 :: no funcionarán, por lo que el usuario debe iniciar sesión en ese momento.
-msg jcabral /server:10.1.6.36 Deploy realizado.
+msg jcabral /server:10.1.6.36 Deploy realizado, revisar su instalación completa en unos minutos.
