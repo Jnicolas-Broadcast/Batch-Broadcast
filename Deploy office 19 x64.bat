@@ -1,3 +1,4 @@
+title Deployment Office 19 (x64)
 :: test Deploy de Office2019 x64
 :: xcopy "\\lsserver\packages\Office2019" c:\temp\Office\ /E
 xcopy "{PackageShare}\installers\Office paquete exe setup\" c:\temp\Office\ /E
