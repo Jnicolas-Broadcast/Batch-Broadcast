@@ -11,11 +11,18 @@ net stop msiserver
 timeout 7 /nobreak
 net start cryptSvc
 net start bits
+:: elimina proc en primer plano
+taskkill /im WINWORD.EXE /f /t
+taskkill /im EXCEL.EXE /f /t
+taskkill /im POWERPNT.EXE /f /t
 :: elimina proc en segundo plano y reinicia servicio msi
 taskkill /im OpenOffice417.exe /f /t
 taskkill /im OfficeClickToRun.exe /f /t
 taskkill /im msiexec.exe /f /t
-timeout 4 /nobreak
+timeout 2 /nobreak
+taskkill /im msiexec.exe /f /t
+timeout 2 /nobreak
+taskkill /im msiexec.exe /f /t
 net start msiserver
 net start wuauserv
 gpupdate /force
