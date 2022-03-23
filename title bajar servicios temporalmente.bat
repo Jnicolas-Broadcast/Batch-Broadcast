@@ -16,7 +16,7 @@ taskkill /im WINWORD.EXE /f /t
 taskkill /im EXCEL.EXE /f /t
 taskkill /im POWERPNT.EXE /f /t
 :: elimina proc en segundo plano y reinicia servicio msi
-taskkill /im OpenOffice417.exe /f /t
+:: taskkill /im OpenOffice417.exe /f /t
 taskkill /im OfficeClickToRun.exe /f /t
 taskkill /im msiexec.exe /f /t
 timeout 2 /nobreak
