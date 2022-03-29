@@ -4,7 +4,10 @@ for /f %a in (HOSTS.txt) do move "\\%a\c$\setup*.exe" \\%a\c$\Office
 :: >>> FALTAN CARPETAS INDEXADAS DE "Office" y "Data" dentro de la misma contenedora raiz "office"
 :: se resuelve el problema debajo...
 
-for /f %a in (HOSTS.txt) do xcopy /y "C:\Office paquete exe setup" \\%a\c$\Office /E
+for /f %a in (HOST3.txt) do xcopy /y "C:\Office" \\%a\c$\Office /E
+
+::para copias del nuevo .xml
+for /f %a in (nueva-ver.txt) do xcopy /y "C:\Office\x64Office-dply-config.xml" \\%a\c$\Office /E
 
 
 
