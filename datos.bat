@@ -1,0 +1,1 @@
+echo %date%, %computername%, %time%

@@ -12,10 +12,10 @@ for /f %a in (HOSTS.txt) do move "\\%a\c$\*.xml" \\%a\c$\Office
 ::ejemplo
 ::psexec \\remote-pc -u “DOMAIN\Administrator” -p “password” cmd /c “msiexec.exe /i “\\server\share\application.msi” /quiet /norestart”
 
-::psexec @test.txt -u "%computername%\Administrador" -p password "C:\Office\setup /configure C:\Office\x64Office-dply-config.xml"
-
+psexec \\10.1.5.3 -u ".\Administrador" -p password -c "C:\Office 19 Rev 2.0.bat"
+psexec @prueba.txt -c "Office 19 Rev 2.0.bat"
 rem ejemplo:
-for /f %a in (HOSTS.txt) do copy /y "\\%a\c$\Office" \\%a\c$\Office
+::for /f %a in (HOSTS.txt) do copy /y "\\%a\c$\Office" \\%a\c$\Office
 ::for /f %a in (pclist.txt) do copy /y \\server\share\file.msi \\%a\c$\
 
 rem Para hacer una carpeta en varios hosts...(de la lista)
